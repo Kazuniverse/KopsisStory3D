@@ -11,8 +11,9 @@ public class Raycast : MonoBehaviour
     public Image interactRaycast; // Gambar di lokasi objek yang di-raycast
     public TextMeshProUGUI textInteract;
     public Camera cam;
+    public Material Outline;
 
-    private bool isRaycast;
+    public bool isRaycast;
     private OnRaycast onRaycast;
     private ControllerMode controllerMode;
 
@@ -47,7 +48,13 @@ public class Raycast : MonoBehaviour
         }
 
         dotUI.SetActive(isRaycast);
-        interactRaycast.gameObject.SetActive(isRaycast);
+
+        bool isNPC = isRaycast && hit.transform.GetComponent<InteractNPC>() != null;
+
+        Color targetColor = isRaycast && isNPC ? new Color(1, 1, 1) : new Color(0, 0, 0);
+        Outline.SetColor("_EmissionColor", targetColor);
+
+        interactRaycast.enabled = isRaycast && !isNPC;
 
         if (isRaycast && onRaycast != null)
         {

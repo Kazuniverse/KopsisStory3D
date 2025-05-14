@@ -5,8 +5,8 @@ using cherrydev;
 [System.Serializable]
 public class NPC
 {
-    public string questName; // Nama quest yang terkait dengan NPC
-    public DialogNodeGraph[] dialogGraphs; // Array dari dialog graph yang terkait dengan NPC
+    public string questName;
+    public DialogNodeGraph[] dialogGraphs; // 0=default, 1=active, 2=completed, 3=after
 }
 
 public class DialogSetup : MonoBehaviour
@@ -20,42 +20,47 @@ public class DialogSetup : MonoBehaviour
     {
         if (dialogBehaviour != null)
         {
-            dialogBehaviour.BindExternalFunction("bukapgr", () => questManager.StartNextQuest());
-            dialogBehaviour.BindExternalFunction("to_after", () => questManager.AfterQuest());
+            dialogBehaviour.BindExternalFunction("next", () => questManager.StartNextQuest());
+            dialogBehaviour.BindExternalFunction("done", () => questManager.CompleteCurrentQuest());
+            dialogBehaviour.BindExternalFunction("after", () => questManager.AfterQuest());
+            dialogBehaviour.BindExternalFunction("instant", () => questManager.InstantQuest());
         }
     }
 
     public void StartDialogForNPC()
     {
         QuestInfo currentQuest = questManager.GetCurrentQuest();
-        NPC targetNPC = null;
-        QuestInfo targetQuest = null;
+        QuestInfo[] allQuests = questManager.quests;
 
-        // Cek quest aktif yang terkait dengan NPC ini
+        int currentIndex = System.Array.IndexOf(allQuests, currentQuest);
+
+        // 1. Jika quest aktif dan milik NPC ini
         if (currentQuest != null && currentQuest.activeNPCID == npcID)
         {
-            targetNPC = FindNPCByQuestName(currentQuest.activeQuestName);
-            targetQuest = currentQuest;
-        }
-        else
-        {
-            // Cari quest terakhir dari NPC ini
-            string lastQuestName = FindLastQuestForNPC();
-            if (!string.IsNullOrEmpty(lastQuestName))
+            NPC npc = FindNPCByQuestName(currentQuest.activeQuestName);
+            if (npc != null)
             {
-                targetQuest = questManager.GetQuestByName(lastQuestName);
-                targetNPC = FindNPCByQuestName(lastQuestName);
+                ShowQuestStateDialog(npc, currentQuest);
+                return;
             }
         }
 
-        if (targetNPC != null && targetQuest != null)
+        // 2. Cari quest terakhir SEBELUM quest aktif yang pernah melibatkan NPC ini
+        for (int i = currentIndex - 1; i >= 0; i--)
         {
-            ShowQuestStateDialog(targetNPC, targetQuest);
+            if (allQuests[i].activeNPCID == npcID)
+            {
+                NPC npc = FindNPCByQuestName(allQuests[i].activeQuestName);
+                if (npc != null)
+                {
+                    ShowQuestStateDialog(npc, allQuests[i]);
+                    return;
+                }
+            }
         }
-        else
-        {
-            UseDefaultDialog();
-        }
+
+        // 3. Jika tidak ada quest yang cocok, gunakan dialog default
+        UseDefaultDialog();
     }
 
     private void ShowQuestStateDialog(NPC npc, QuestInfo quest)
@@ -65,50 +70,38 @@ public class DialogSetup : MonoBehaviour
         else if (quest.isQuestCompleted) stateIndex = 2;
         else if (quest.isQuestActive) stateIndex = 1;
 
-        if (npc.dialogGraphs.Length > stateIndex)
+        if (npc.dialogGraphs.Length > stateIndex && npc.dialogGraphs[stateIndex] != null)
         {
             dialogBehaviour.StartDialog(npc.dialogGraphs[stateIndex]);
         }
         else
         {
-            Debug.LogError($"Dialog graph tidak tersedia untuk state {stateIndex}");
+            Debug.LogWarning($"Dialog graph untuk state {stateIndex} tidak tersedia. Jalankan default.");
             UseDefaultDialog();
         }
     }
 
     private void UseDefaultDialog()
     {
-        NPC defaultNPC = npcs.FirstOrDefault(n => string.IsNullOrEmpty(n.questName));
-        
-        if (defaultNPC != null && defaultNPC.dialogGraphs.Length > 0)
+        // Menemukan NPC dengan questName kosong sebagai default
+        NPC defaultNPC = npcs.FirstOrDefault(n =>
+            string.IsNullOrEmpty(n.questName) &&
+            n.dialogGraphs.Length > 0 &&
+            n.dialogGraphs[0] != null);
+
+        if (defaultNPC != null)
         {
             dialogBehaviour.StartDialog(defaultNPC.dialogGraphs[0]);
         }
-        else if (npcs.Length > 0)
-        {
-            dialogBehaviour.StartDialog(npcs[0].dialogGraphs[0]);
-        }
         else
         {
-            Debug.LogError("Tidak ada dialog yang tersedia");
+            Debug.LogError($"Dialog default tidak ditemukan untuk NPC {npcID}");
         }
     }
 
     private NPC FindNPCByQuestName(string questName)
     {
+        // Menemukan NPC berdasarkan nama quest
         return npcs.FirstOrDefault(npc => npc.questName == questName);
-    }
-
-    private string FindLastQuestForNPC()
-    {
-        // Mencari quest terakhir yang dimiliki NPC ini berdasarkan urutan quests
-        for (int i = questManager.quests.Length - 1; i >= 0; i--)
-        {
-            if (questManager.quests[i].activeNPCID == npcID)
-            {
-                return questManager.quests[i].activeQuestName;
-            }
-        }
-        return null;
     }
 }

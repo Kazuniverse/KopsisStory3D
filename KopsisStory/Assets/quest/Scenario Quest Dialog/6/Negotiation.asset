@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8392276660787174669
+--- !u!114 &-2658460928453024712
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16,21 +16,24 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 1000
-    y: 212
+    x: 212
+    y: 9
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: Pel
-    Text: Udah jelas belum bang?
+    CharacterName: Rara
+    Text: 'Mohon maaf sebelumnya, Pak.
+
+      Kami bermaksud untuk menghidupkan kembali
+      Kopsis.'
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 8981355578182377273}
-  ChildNode: {fileID: 4694220252149643020}
+  ParentNode: {fileID: 3868887446338261137}
+  ChildNode: {fileID: -2179934331400207072}
   _isExternalFunc: 0
   _externalFunctionName: 
---- !u!114 &-8093412959832074108
+--- !u!114 &-2181777894623193821
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -46,51 +49,24 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 120
-    y: 38
+    x: 1161
+    y: 162
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: Pel
-    Text: Apa abang sudah membukakan gerbangnya?
+    CharacterName: Kepsek
+    Text: 'Namun, jika dalam waktu tiga bulan kalian belum bisa menunjukkan manfaatnya,
+      Kopsis akan tetap berjalan.
+
+      Tapi jika tidak, kopsis harus dibubarkan.'
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 0}
-  ChildNode: {fileID: -2611102666921100612}
-  _isExternalFunc: 0
-  _externalFunctionName: awal
---- !u!114 &-6098533741688914377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: 1010
-    y: 540
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  _sentence:
-    CharacterName: Pel
-    Text: Oke bang, aku tunggu disini
-    CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 4694220252149643020}
-  ChildNode: {fileID: 0}
+  ParentNode: {fileID: 3219507689072045877}
+  ChildNode: {fileID: 166881347191235278}
   _isExternalFunc: 0
   _externalFunctionName: 
---- !u!114 &-2891951381098671399
+--- !u!114 &-2179934331400207072
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,49 +82,23 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 785
-    y: 367
+    x: 405
+    y: 9
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: Pel
-    Text: Tentu saja!
+    CharacterName: Kepsek
+    Text: 'Hmmm. . ., tapi kalian tahu sendiri saat ini Kopsis tidak ada yang mengurus.
+
+      Menghidupkannya
+      lagi sekarang akan lebih sulit daripada sebelumnya.'
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 4694220252149643020}
-  ChildNode: {fileID: 977090616137861217}
+  ParentNode: {fileID: -2658460928453024712}
+  ChildNode: {fileID: 3295600125478823714}
   _isExternalFunc: 0
-  _externalFunctionName: ke_awal
---- !u!114 &-2611102666921100612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
-  m_Name: Answer Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: 348
-    y: 42
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  Answers:
-  - Belum
-  - Gimana cara bukanya?
-  ParentSentenceNode: {fileID: -8093412959832074108}
-  ChildSentenceNodes:
-  - {fileID: 4295129227049385122}
-  - {fileID: 5234646145107002788}
+  _externalFunctionName: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,22 +109,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
-  m_Name: progres_pel
+  m_Name: Negotiation
   m_EditorClassIdentifier: 
   NodesList:
-  - {fileID: -8093412959832074108}
-  - {fileID: -2611102666921100612}
-  - {fileID: 4295129227049385122}
-  - {fileID: 5234646145107002788}
-  - {fileID: 977090616137861217}
-  - {fileID: 8981355578182377273}
-  - {fileID: -8392276660787174669}
-  - {fileID: 4694220252149643020}
-  - {fileID: -6098533741688914377}
-  - {fileID: -2891951381098671399}
+  - {fileID: 3868887446338261137}
+  - {fileID: -2658460928453024712}
+  - {fileID: -2179934331400207072}
+  - {fileID: 3295600125478823714}
+  - {fileID: 5442219952922482779}
+  - {fileID: 6985656685684583900}
+  - {fileID: 3219507689072045877}
+  - {fileID: -2181777894623193821}
+  - {fileID: 166881347191235278}
   NodeToDrawLineFrom: {fileID: 0}
   LinePosition: {x: 0, y: 0}
---- !u!114 &977090616137861217
+--- !u!114 &166881347191235278
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,81 +139,21 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 572
-    y: 210
+    x: 972
+    y: 160
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: Pel
-    Text: Jadi cara buka gerbangnya itu, abang arahin aja dulu aim/pointer ke arah
-      gerbang
+    CharacterName: Rara
+    Text: Terimakasih banyak, Pak.
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -2891951381098671399}
-  ChildNode: {fileID: 8981355578182377273}
-  _isExternalFunc: 0
-  _externalFunctionName: 
---- !u!114 &4295129227049385122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: 572
-    y: 42
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  _sentence:
-    CharacterName: Pel
-    Text: "Tenang saja, aku akan tetap setia mennunggu \U0001F600"
-    CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -2611102666921100612}
+  ParentNode: {fileID: -2181777894623193821}
   ChildNode: {fileID: 0}
-  _isExternalFunc: 0
-  _externalFunctionName: 
---- !u!114 &4694220252149643020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
-  m_Name: Answer Node
-  m_EditorClassIdentifier: 
-  ConnectedNodesList: []
-  NodeGraph: {fileID: 11400000}
-  Rect:
-    serializedVersion: 2
-    x: 1005
-    y: 376
-    width: 190
-    height: 135
-  IsDragging: 0
-  IsSelected: 0
-  Answers:
-  - Udah jelas banget kok dek
-  - Bentar, boleh ulangin ga?
-  ParentSentenceNode: {fileID: -8392276660787174669}
-  ChildSentenceNodes:
-  - {fileID: -6098533741688914377}
-  - {fileID: -2891951381098671399}
---- !u!114 &5234646145107002788
+  _isExternalFunc: 1
+  _externalFunctionName: next
+--- !u!114 &3219507689072045877
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -280,21 +169,24 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 345
-    y: 210
+    x: 1165
+    y: 12
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: Pel
-    Text: Alamak, aku belum kasih tau abang ya sebelumnya
+    CharacterName: Kepsek
+    Text: 'Baiklah, saya beri kalian kesempatan.
+
+      Kalian diizinkan untuk mengelola
+      Kopsis secara mandri.'
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: -2611102666921100612}
-  ChildNode: {fileID: 977090616137861217}
+  ParentNode: {fileID: 6985656685684583900}
+  ChildNode: {fileID: -2181777894623193821}
   _isExternalFunc: 0
   _externalFunctionName: 
---- !u!114 &8981355578182377273
+--- !u!114 &3295600125478823714
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -310,18 +202,111 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 795
-    y: 210
+    x: 603
+    y: 9
     width: 190
     height: 135
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: Pel
-    Text: Nanti akan ada tulisan GERBANG, nah abang tinggal pake Interact (E) aja
-      buat buka gerbangnya
+    CharacterName: Sisi
+    Text: Maka dari itu, tanpa ada orang yang berinisaitif untuk mengurusnya secara
+      mandiri, keadaan Kopsis akan berangsur-angsur memburuk. Itulah kenapa kami
+      meminta izin untuk mengurusnya, Pak.
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 977090616137861217}
-  ChildNode: {fileID: -8392276660787174669}
+  ParentNode: {fileID: -2179934331400207072}
+  ChildNode: {fileID: 5442219952922482779}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &3868887446338261137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 13
+    y: 7
+    width: 190
+    height: 155
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Kepsek
+    Text: Ada perlu apa kalian menemui saya?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 0}
+  ChildNode: {fileID: -2658460928453024712}
+  _isExternalFunc: 1
+  _externalFunctionName: after
+--- !u!114 &5442219952922482779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 792
+    y: 9
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Dan kami yakin manfaat dari Kopsis ini merupakan sesuatu yang layak untuk
+      diinvestasikan.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 3295600125478823714}
+  ChildNode: {fileID: 6985656685684583900}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &6985656685684583900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 979
+    y: 11
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Koko
+    Text: Betul Pak. Kami sendiri sudah merasakan manfaat dari Kopsis yang dijalankan
+      oleh Bu Sari sebelumnya.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 5442219952922482779}
+  ChildNode: {fileID: 3219507689072045877}
   _isExternalFunc: 0
   _externalFunctionName: 

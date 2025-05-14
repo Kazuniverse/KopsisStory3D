@@ -1,0 +1,514 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7539289388686435393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1195
+    y: 118
+    width: 190
+    height: 155
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Jadi namamu Dani ya, kenalin namaku {nama}, salam kenal ya Dani
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -5476906982435130701}
+  ChildNode: {fileID: -5781354567025292319}
+  _isExternalFunc: 1
+  _externalFunctionName: Women
+--- !u!114 &-6429156328041617252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 112
+    y: 412
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: "\u2026"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 3799457208078036734}
+  ChildNode: {fileID: 5208741876234430722}
+  _isExternalFunc: 0
+  _externalFunctionName: next
+--- !u!114 &-5781354567025292319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 977
+    y: 277
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: Iya, salam kenal juga {ho1} {nama}!
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 2341296035536306822}
+  ChildNode: {fileID: -1414655571644143482}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-5476906982435130701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 977
+    y: 128
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  Answers:
+  - Gilang
+  - Chyntia
+  ParentSentenceNode: {fileID: 3547319620169702464}
+  ChildSentenceNodes:
+  - {fileID: 2341296035536306822}
+  - {fileID: -7539289388686435393}
+--- !u!114 &-4759463461184628240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 540
+    y: 276
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Tolongin apaan Dan?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -1414655571644143482}
+  ChildNode: {fileID: -3398699393830786660}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-3398699393830786660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 333
+    y: 273
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: '{ho2} bisa bantuin Dani buat bukain gerbang ga?'
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -4759463461184628240}
+  ChildNode: {fileID: 3799457208078036734}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-1414655571644143482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 759
+    y: 282
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: Anu {ho1}, Dani boleh minta tolong ga?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -5781354567025292319}
+  ChildNode: {fileID: -4759463461184628240}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: normal_pel
+  m_EditorClassIdentifier: 
+  NodesList:
+  - {fileID: 8852435009740618761}
+  - {fileID: 8291386514690023083}
+  - {fileID: 2779258627860064113}
+  - {fileID: 3547319620169702464}
+  - {fileID: -5476906982435130701}
+  - {fileID: -7539289388686435393}
+  - {fileID: 2341296035536306822}
+  - {fileID: -5781354567025292319}
+  - {fileID: -1414655571644143482}
+  - {fileID: -4759463461184628240}
+  - {fileID: -3398699393830786660}
+  - {fileID: 3799457208078036734}
+  - {fileID: -6429156328041617252}
+  - {fileID: 5208741876234430722}
+  - {fileID: 7295288301025044277}
+  - {fileID: 4439144359622682941}
+  NodeToDrawLineFrom: {fileID: 0}
+  LinePosition: {x: 0, y: 0}
+--- !u!114 &2341296035536306822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1193
+    y: 277
+    width: 190
+    height: 155
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Jadi namamu Dani ya, kenalin namaku {nama}, salam kenal ya Dani
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -5476906982435130701}
+  ChildNode: {fileID: -5781354567025292319}
+  _isExternalFunc: 1
+  _externalFunctionName: Lanang
+--- !u!114 &2779258627860064113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 542
+    y: 116
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: ???
+    Text: Hehe iya dong, aku udah familiar sama muka semua orang di sekolah!
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 8291386514690023083}
+  ChildNode: {fileID: 3547319620169702464}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &3547319620169702464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 760
+    y: 118
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: 'Kenalin namaku Dani
+
+      Kalau nama kakak siapa?'
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 2779258627860064113}
+  ChildNode: {fileID: -5476906982435130701}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &3799457208078036734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 114
+    y: 272
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: "Dani gabisa buka gerbangnya hehehe\u2026"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -3398699393830786660}
+  ChildNode: {fileID: -6429156328041617252}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &4439144359622682941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 744
+    y: 417
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: Dani bakal nungguin disini sampe {ho2} buka gerbangnya
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 7295288301025044277}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &5208741876234430722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 334
+    y: 415
+    width: 190
+    height: 155
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Aneh-aneh aja gabisa buka gerbang, yaudah deh sini biar abang bukain
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -6429156328041617252}
+  ChildNode: {fileID: 7295288301025044277}
+  _isExternalFunc: 1
+  _externalFunctionName: instant
+--- !u!114 &7295288301025044277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 543
+    y: 415
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: Hehehe, makasih {ho1} {nama}
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 5208741876234430722}
+  ChildNode: {fileID: 4439144359622682941}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &8291386514690023083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 337
+    y: 114
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Iya nih, kok kamu bisa tau?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 8852435009740618761}
+  ChildNode: {fileID: 2779258627860064113}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &8852435009740618761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 121
+    y: 111
+    width: 190
+    height: 155
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: ???
+    Text: Halo, kakak pasti siswa pindahan ya?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 0}
+  ChildNode: {fileID: 8291386514690023083}
+  _isExternalFunc: 1
+  _externalFunctionName: done

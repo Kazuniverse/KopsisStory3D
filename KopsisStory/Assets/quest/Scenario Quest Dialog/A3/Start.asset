@@ -1,0 +1,494 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9075811551843096473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 13
+    y: 237
+    width: 190
+    height: 155
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Hahaha iya iya, gitu dong semangat!
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -490890401247825588}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 1
+  _externalFunctionName: next
+--- !u!114 &-7831624978954146404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 584
+    y: 79
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Barusan aku abis dari Kopsis, dan aku mutusin buat bantuin mengelola Kopsis.
+      {ho2} cuma mau bilang terimakasih karena udah nyaranin {ho2} buat pergi ke
+      Kopsis.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -1158982743200161560}
+  ChildNode: {fileID: 6054008990095726240}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-7096614684888564225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 771
+    y: 238
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: "Oooh, jadi sebelumnya kamu itu anggota Kopsis. . . \nNah, sekarang kan
+      Kopsis udah buka lagi nih, gimana kalau kamu ikut kami jadi anggota juga Dan?"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -5891951659926346277}
+  ChildNode: {fileID: 5256909269482023692}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-5891951659926346277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 962
+    y: 232
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: Apalagi Dani sebelumnya juga anggota Kopsis bareng Kak Rara DKK, sedih
+      dong kalo harus dibubarin gitu aja kopsisnya.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 7487699965579636451}
+  ChildNode: {fileID: -7096614684888564225}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-4801708938501052245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 205
+    y: 76
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Belum juga sehari Dan, udah kangen nih sama {ho2}?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 411818366047038848}
+  ChildNode: {fileID: -1158982743200161560}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-4406146497436430979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 394
+    y: 238
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Iya Dan gapapa kok, nanti kalau kamu udah ga sibuk pertimbangin buat ikut
+      jadi anggota Kopsis ya. Mereka pasti juga senang kok lihat kamu lagi!
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 5256909269482023692}
+  ChildNode: {fileID: -490890401247825588}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-2326245064069180156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1152
+    y: 80
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: Tempat itu memiliki banyak sekali cerita dan kenangan yang berharga bagi
+      para siswa dan anggotanya.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 2925923614562931249}
+  ChildNode: {fileID: 7539000638812394286}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-1158982743200161560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 395
+    y: 78
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: Hahaha, {ho2} mah ada-ada aja. Jadi ada apa {ho1}, kok nyariin Dani?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -4801708938501052245}
+  ChildNode: {fileID: -7831624978954146404}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-490890401247825588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 199
+    y: 238
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: Hehehe iya {ho1}, makasih ya buat rekomendasinya. Dani bakal usahain yang
+      terbaik!
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -4406146497436430979}
+  ChildNode: {fileID: -9075811551843096473}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  NodesList:
+  - {fileID: 411818366047038848}
+  - {fileID: -4801708938501052245}
+  - {fileID: -1158982743200161560}
+  - {fileID: -7831624978954146404}
+  - {fileID: 6054008990095726240}
+  - {fileID: 2925923614562931249}
+  - {fileID: 7539000638812394286}
+  - {fileID: 7487699965579636451}
+  - {fileID: -5891951659926346277}
+  - {fileID: -7096614684888564225}
+  - {fileID: 5256909269482023692}
+  - {fileID: -4406146497436430979}
+  - {fileID: -490890401247825588}
+  - {fileID: -9075811551843096473}
+  - {fileID: -2326245064069180156}
+  NodeToDrawLineFrom: {fileID: 0}
+  LinePosition: {x: 0, y: 0}
+--- !u!114 &411818366047038848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 17
+    y: 72
+    width: 190
+    height: 155
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: Halo {ho1}, ada apa nih kok tumben banget ngajak dani ngobrol?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 0}
+  ChildNode: {fileID: -4801708938501052245}
+  _isExternalFunc: 1
+  _externalFunctionName: after
+--- !u!114 &2925923614562931249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 966
+    y: 82
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: Bukannya Dani mau ngerjain {ho2}, tapi Dani cuman pengen Kopsis ini beroperasi
+      sekali lagi.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 6054008990095726240}
+  ChildNode: {fileID: -2326245064069180156}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &5256909269482023692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 582
+    y: 237
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: Bener juga yah, tapi kayaknya Dani sekarang gabisa ikut deh. Dani sering
+      sibuk akhir-akhir ini, maaf ya {ho1}. . .
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -7096614684888564225}
+  ChildNode: {fileID: -4406146497436430979}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &6054008990095726240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 774
+    y: 82
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Tapi {ho2} masih bingung, kenapa kamu nyaranin {ho2} buat langsung pergi
+      ke Kopsis di hari pertama {ho2}?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -7831624978954146404}
+  ChildNode: {fileID: 2925923614562931249}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &7487699965579636451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1158
+    y: 227
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: . . .
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 7539000638812394286}
+  ChildNode: {fileID: -5891951659926346277}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &7539000638812394286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1340
+    y: 78
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Dani
+    Text: "Dani hanya merasa tak rela jika tempat itu dihuni oleh para berandalan
+      atau bahkan dibubarkan oleh sekolah dan hilang tanpa sisa, kemudian hanya meninggalkan
+      luka dan kenangan\u2026"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -2326245064069180156}
+  ChildNode: {fileID: 7487699965579636451}
+  _isExternalFunc: 0
+  _externalFunctionName: 

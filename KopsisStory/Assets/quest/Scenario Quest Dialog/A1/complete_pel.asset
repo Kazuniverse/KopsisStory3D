@@ -16,7 +16,7 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 50
+    x: 51
     y: 51
     width: 190
     height: 135
@@ -24,7 +24,7 @@ MonoBehaviour:
   IsSelected: 0
   _sentence:
     CharacterName: Pel
-    Text: "Wah! Terimakasih banyak bang, abang emang debes \U0001F60D"
+    Text: "Wah! Terimakasih banyak {ho1}, {ho2} emang debes \U0001F60D"
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: 0}
   ChildNode: {fileID: 5073519586358861011}
@@ -64,20 +64,20 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 501
+    x: 502
     y: 54
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
-  IsSelected: 1
+  IsSelected: 0
   _sentence:
     CharacterName: Pel
-    Text: "Jangan malu kalo mau tanya bang, aku pasti siap menolong abang \U0001F601"
+    Text: "Jangan malu kalo mau tanya {ho1}, aku pasti siap menolong {ho2} \U0001F601"
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: 5073519586358861011}
   ChildNode: {fileID: 0}
   _isExternalFunc: 1
-  _externalFunctionName: to_after
+  _externalFunctionName: instant
 --- !u!114 &5073519586358861011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 279
+    x: 280
     y: 56
     width: 190
     height: 135
@@ -102,7 +102,7 @@ MonoBehaviour:
   IsSelected: 0
   _sentence:
     CharacterName: Pel
-    Text: Kalo abang mau tanya-tanya sesuatu, aku biasanya ada di samping pos satpam
+    Text: Kalo {ho2} mau tanya-tanya sesuatu, aku biasanya ada di samping pos satpam
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: -8164219945437939496}
   ChildNode: {fileID: 2915163760329583058}

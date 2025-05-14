@@ -4,7 +4,6 @@ using System.Collections;
 
 public class InteractNPC : OnRaycast
 {
-    [SerializeField] private Transform npcTransform;
     [SerializeField] private Movement playerMovement;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Transform playerTransform;
@@ -20,12 +19,14 @@ public class InteractNPC : OnRaycast
     [Header("Transition Settings")]
     [SerializeField] private float transitionDuration = 1f;
 
-    private static bool isInConversation = false;
-    private static Vector3 staticCameraOriginalPosition;
-    private static Quaternion staticCameraOriginalRotation;
-    
-    private Quaternion npcOriginalRotation;
+    public bool isInConversation = false;
+    private static Vector3 staticCameraOriginalPosition = Vector3.zero;
+    private static Quaternion staticCameraOriginalRotation = Quaternion.identity;
+
+    private static Quaternion staticNpcOriginalRotation = Quaternion.identity;
+
     public DialogSetup dialogSetup;
+    public GameObject gManager;
 
     private void OnEnable()
     {
@@ -47,12 +48,15 @@ public class InteractNPC : OnRaycast
     {
         if (!isInConversation)
         {
+            SaveOriginalStates();
             StartConversation();
             foreach (GameObject isi in canvas)
             {
                 isi.SetActive(false);
             }
+            gManager.GetComponent<PauseManager>().enabled = false;
         }
+
         gameObject.layer = LayerMask.NameToLayer("Default");
     }
 
@@ -60,6 +64,7 @@ public class InteractNPC : OnRaycast
     {
         if (dialogSetup == null) return;
 
+        dialogBehaviour.SetCurrentDialogOwner(this);
         dialogSetup.StartDialogForNPC();
         isInConversation = true;
 
@@ -67,7 +72,6 @@ public class InteractNPC : OnRaycast
         animate.SetFloat("walk", 0);
         animate.SetBool("fall", false);
 
-        SaveOriginalStates();
         StartCoroutine(SmoothTransitionToConversation());
 
         TogglePlayerMovement(false);
@@ -78,49 +82,42 @@ public class InteractNPC : OnRaycast
     {
         float elapsedTime = 0f;
 
-        Quaternion npcStartRotation = npcTransform.rotation;
+        Quaternion npcStartRotation = transform.rotation;
         Quaternion cameraStartRotation = mainCamera.transform.rotation;
         Vector3 cameraStartPosition = mainCamera.transform.position;
 
-        Vector3 directionToPlayer = playerTransform.position - npcTransform.position;
+        Vector3 directionToPlayer = playerTransform.position - transform.position;
         directionToPlayer.y = 0;
         Quaternion npcTargetRotation = Quaternion.LookRotation(directionToPlayer);
 
-        Vector3 directionToNPC = npcTransform.position - mainCamera.transform.position;
+        Vector3 directionToNPC = transform.position - mainCamera.transform.position;
         directionToNPC.y = 0;
         directionToNPC.Normalize();
-        Vector3 cameraTargetPosition = npcTransform.position + (-directionToNPC * cameraDistance) + Vector3.up * cameraHeight;
-        Quaternion cameraTargetRotation = Quaternion.LookRotation(npcTransform.position - cameraTargetPosition);
+        Vector3 cameraTargetPosition = transform.position + (-directionToNPC * cameraDistance) + Vector3.up * cameraHeight;
+        Quaternion cameraTargetRotation = Quaternion.LookRotation(transform.position - cameraTargetPosition);
 
         while (elapsedTime < transitionDuration)
         {
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / transitionDuration;
 
-            npcTransform.rotation = Quaternion.Slerp(npcStartRotation, npcTargetRotation, t);
+            transform.rotation = Quaternion.Slerp(npcStartRotation, npcTargetRotation, t);
             mainCamera.transform.position = Vector3.Lerp(cameraStartPosition, cameraTargetPosition, t);
             mainCamera.transform.rotation = Quaternion.Slerp(cameraStartRotation, cameraTargetRotation, t);
 
             yield return null;
         }
 
-        npcTransform.rotation = npcTargetRotation;
+        transform.rotation = npcTargetRotation;
         mainCamera.transform.position = cameraTargetPosition;
         mainCamera.transform.rotation = cameraTargetRotation;
     }
 
     private void SaveOriginalStates()
     {
-        if (npcTransform != null)
-        {
-            npcOriginalRotation = npcTransform.rotation;
-        }
-
-        if (mainCamera != null)
-        {
-            staticCameraOriginalPosition = mainCamera.transform.position;
-            staticCameraOriginalRotation = mainCamera.transform.rotation;
-        }
+        staticCameraOriginalPosition = mainCamera.transform.position;
+        staticCameraOriginalRotation = mainCamera.transform.rotation;
+        staticNpcOriginalRotation = transform.rotation;
     }
 
     private void TogglePlayerMovement(bool enable)
@@ -133,21 +130,13 @@ public class InteractNPC : OnRaycast
 
     private void ShowCursor(bool show)
     {
-        if (show)
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
-        else
-        {
-            // Kunci dan sembunyikan cursor
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
+        Cursor.lockState = show ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = show;
     }
 
     private void OnConversationEnded()
     {
+        if (dialogBehaviour.CurrentDialogOwner != this) return;
         EndConversation();
     }
 
@@ -160,10 +149,9 @@ public class InteractNPC : OnRaycast
         {
             isi.SetActive(true);
         }
-
+        gManager.GetComponent<PauseManager>().enabled = true;
         isInConversation = false;
-        
-        // Pastikan cursor disembunyikan
+
         ShowCursor(false);
     }
 
@@ -171,7 +159,7 @@ public class InteractNPC : OnRaycast
     {
         float elapsedTime = 0f;
 
-        Quaternion npcStartRotation = npcTransform.rotation;
+        Quaternion npcStartRotation = transform.rotation;
         Quaternion cameraStartRotation = mainCamera.transform.rotation;
         Vector3 cameraStartPosition = mainCamera.transform.position;
 
@@ -180,17 +168,23 @@ public class InteractNPC : OnRaycast
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / transitionDuration;
 
-            npcTransform.rotation = Quaternion.Slerp(npcStartRotation, npcOriginalRotation, t);
+            transform.rotation = Quaternion.Slerp(npcStartRotation, staticNpcOriginalRotation, t);
             mainCamera.transform.position = Vector3.Lerp(cameraStartPosition, staticCameraOriginalPosition, t);
             mainCamera.transform.rotation = Quaternion.Slerp(cameraStartRotation, staticCameraOriginalRotation, t);
 
             yield return null;
         }
 
+        transform.rotation = staticNpcOriginalRotation;
         mainCamera.transform.position = staticCameraOriginalPosition;
         mainCamera.transform.rotation = staticCameraOriginalRotation;
 
         TogglePlayerMovement(true);
         gameObject.layer = LayerMask.NameToLayer("Interacted");
+
+        // Reset original states
+        staticCameraOriginalPosition = Vector3.zero;
+        staticCameraOriginalRotation = Quaternion.identity;
+        staticNpcOriginalRotation = Quaternion.identity;
     }
 }

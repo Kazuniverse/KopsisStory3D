@@ -9,56 +9,52 @@ public class npcroute : MonoBehaviour
     [SerializeField] private Transform[] schoolRoute;
 
     private int waypointIndex;
-    private Vector3 target;
-    private float pauseDuration = Random.Range(0, 3);
     private bool isWaiting = false;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        
+
         if (schoolRoute == null || schoolRoute.Length == 0)
         {
             Debug.LogError("School waypoints not assigned!");
             return;
         }
-        
+
         waypointIndex = 0;
-        UpdateDestination(); 
-        animator.SetBool("jalan", true);
+        MoveToWaypoint();
+        if (animator != null) animator.SetBool("jalan", true);
     }
 
     void Update()
     {
-        UpdateDestination();
-        if (!isWaiting && agent.remainingDistance <= agent.stoppingDistance)
+        if (!isWaiting && !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
         {
             StartCoroutine(PauseBeforeNextDestination());
         }
     }
 
-    public void UpdateDestination()
+    private void MoveToWaypoint()
     {
-        target = schoolRoute[waypointIndex].position;
-        agent.SetDestination(target);
+        if (schoolRoute.Length == 0) return;
+        agent.SetDestination(schoolRoute[waypointIndex].position);
     }
 
-    public IEnumerator PauseBeforeNextDestination()
+    private IEnumerator PauseBeforeNextDestination()
     {
         isWaiting = true;
-        animator.SetBool("jalan", false);
+
+        if (animator != null) animator.SetBool("jalan", false);
         agent.isStopped = true;
 
+        float pauseDuration = Random.Range(0.5f, 3f);
         yield return new WaitForSeconds(pauseDuration);
 
-        animator.SetBool("jalan", true);
-        agent.isStopped = false;
+        waypointIndex = (waypointIndex + 1) % schoolRoute.Length;
 
-        waypointIndex++;
-        if (waypointIndex >= schoolRoute.Length)
-        {
-            waypointIndex = 0;
-        }
+        agent.isStopped = false;
+        MoveToWaypoint();
+        if (animator != null) animator.SetBool("jalan", true);
 
         isWaiting = false;
     }

@@ -1,0 +1,684 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8849280167291624487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 87
+    y: 196
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: "\u2026, aku benar-benar tidak menyangka hal seperti itu pernah terjadi
+      disini\u2026"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -5245837229120063694}
+  ChildNode: {fileID: 7573007686858998432}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-7497051579421381304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 734
+    y: 350
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Mereka sedikit demi sedikit mulai menyerah akan keadaan Kopsis, dan setelah
+      itu entah kenapa mereka tiba-tiba mulai terkenal sebagai pembuat onar di sekolah.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 2391982883434781383}
+  ChildNode: {fileID: 9089818524495664796}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-5663982599850184442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 303
+    y: 46
+    width: 190
+    height: 155
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Iya, beginilah keadaan Kopsis di sekolah kami. Sudah berkali-kali kami
+      mencoba menghidupkan tempat ini, tapi pada akhirnya selalu saja gagal dan tidak
+      pernah berhasil.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -3898608129229868144}
+  ChildNode: {fileID: 5646438085953706162}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-5245837229120063694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 306
+    y: 196
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: ' Aku tidak dapat diam saja melihat hal itu, aku melaporkan tindakan mereka
+      kepada kepala sekolah dan pada akhirnya mereka dikeluarkan dari seklah.'
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 9089818524495664796}
+  ChildNode: {fileID: -8849280167291624487}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-5100020939985990946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1360
+    y: 342
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Bukannya aku waspada . . ., aku hanya ingin menjaga tempat ini dari para
+      pembuat masalah. Sebelum kamu datang kesini, sekolah ini pernah menerima beberapa
+      murid pindahan baru selain kamu.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -5005737075258251518}
+  ChildNode: {fileID: -3659062754751208099}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-5005737075258251518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1356
+    y: 197
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Namaku {nama}, salam kenal. Kamu kelihatan sangat waspada pada orang lain
+      yang memasuki Kopsis, sebenarnya ada apa?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -1244363193270235097}
+  ChildNode: {fileID: -5100020939985990946}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-3898608129229868144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 86
+    y: 19
+    width: 190
+    height: 155
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: . . ., ini . . . Kopsis?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 0}
+  ChildNode: {fileID: -5663982599850184442}
+  _isExternalFunc: 1
+  _externalFunctionName: after
+--- !u!114 &-3659062754751208099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1149
+    y: 345
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: "Awalnya aku mengira bahwa mereka adalah orang yang rajin dan juga baik,
+      ada beberapa diantara mereka yang mencoba membantu kami untuk membangun kembali
+      kopsis ini\u2026, hingga mereka berubah \u2026"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -5100020939985990946}
+  ChildNode: {fileID: 2391982883434781383}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-1685678801551686879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 945
+    y: 192
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: . . ., haaahh~ maaf karena pertanyaanku barusan, kau pasti merasa bingung
+      kenapa aku tiba-tiba mengatakannya.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 6106277461376034404}
+  ChildNode: {fileID: -1244363193270235097}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-1244363193270235097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1148
+    y: 195
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Kenalin namaku Rara, siapa namamu?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -1685678801551686879}
+  ChildNode: {fileID: -5005737075258251518}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  NodesList:
+  - {fileID: -3898608129229868144}
+  - {fileID: -5663982599850184442}
+  - {fileID: 5646438085953706162}
+  - {fileID: 6849312841655703606}
+  - {fileID: 1870620725083179181}
+  - {fileID: 7219215421656671719}
+  - {fileID: 6106277461376034404}
+  - {fileID: -1685678801551686879}
+  - {fileID: -1244363193270235097}
+  - {fileID: 8016751561473084740}
+  - {fileID: -5005737075258251518}
+  - {fileID: -5100020939985990946}
+  - {fileID: -3659062754751208099}
+  - {fileID: 2391982883434781383}
+  - {fileID: -7497051579421381304}
+  - {fileID: 9089818524495664796}
+  - {fileID: -5245837229120063694}
+  - {fileID: -8849280167291624487}
+  - {fileID: 7573007686858998432}
+  - {fileID: 7672267645967673909}
+  - {fileID: 7819793080781064824}
+  NodeToDrawLineFrom: {fileID: 0}
+  LinePosition: {x: 0, y: 0}
+--- !u!114 &1870620725083179181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 943
+    y: 49
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Entahlah . . ., kurasa begitu. Saat aku sampai di depan gerbang sekolah,
+      ada seorang murid yang menyarankan padaku untuk pergi ke Kopsis.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 6849312841655703606}
+  ChildNode: {fileID: 7219215421656671719}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &2391982883434781383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 948
+    y: 349
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: "\u2026, Memangnya apa yang terjadi?"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -3659062754751208099}
+  ChildNode: {fileID: -7497051579421381304}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &5646438085953706162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 537
+    y: 44
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Kamu pasti siswa pindahan itu, kenapa kamu langsung datang ke Kopsis yang
+      menyedihkan ini? Apa kamu berpikir tempat ini akan seramai dan senyaman Kopsis
+      di sekolah lamamu?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -5663982599850184442}
+  ChildNode: {fileID: 6849312841655703606}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &6106277461376034404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 728
+    y: 190
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: . . .
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 6849312841655703606}
+  ChildNode: {fileID: -1685678801551686879}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &6849312841655703606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 745
+    y: 46
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  Answers:
+  - Katakan yang sejujurnya
+  - Diam
+  ParentSentenceNode: {fileID: 5646438085953706162}
+  ChildSentenceNodes:
+  - {fileID: 1870620725083179181}
+  - {fileID: 6106277461376034404}
+--- !u!114 &7219215421656671719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1148
+    y: 50
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Kupikir ia menyarankan itu agar aku dapat lebih cepat bergaul dengan orang
+      lain, tapi saat aku sampai disini . . . Ini benar-benar berbeda dari yang kubayangkan.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 1870620725083179181}
+  ChildNode: {fileID: 8016751561473084740}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &7573007686858998432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 85
+    y: 340
+    width: 190
+    height: 155
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: ???
+    Text: Meskipun kamu tidak percaya, memang itulah kenyataannya.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -8849280167291624487}
+  ChildNode: {fileID: 7672267645967673909}
+  _isExternalFunc: 1
+  _externalFunctionName: next
+--- !u!114 &7672267645967673909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 310
+    y: 351
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: '!!!'
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 7573007686858998432}
+  ChildNode: {fileID: 7819793080781064824}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &7819793080781064824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 513
+    y: 354
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: '!!!'
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 7672267645967673909}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &8016751561473084740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1354
+    y: 53
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: . . ., haaahh~ jadi begitu. Maaf karena pertanyaanku barusan, kau pasti
+      merasa bingung kenapa aku tiba-tiba mengatakannya.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 7219215421656671719}
+  ChildNode: {fileID: -1244363193270235097}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &9089818524495664796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 514
+    y: 191
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Mereka sering kali menggunakan Kopsis yang kosong ini sebagai tempat mereka
+      melakukan berbagai hal yang melanggar peraturan sekolah.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -7497051579421381304}
+  ChildNode: {fileID: -5245837229120063694}
+  _isExternalFunc: 0
+  _externalFunctionName: 

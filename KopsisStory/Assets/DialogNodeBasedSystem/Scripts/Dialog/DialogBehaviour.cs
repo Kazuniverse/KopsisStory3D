@@ -23,6 +23,7 @@ namespace cherrydev
 
         private bool _isDialogStarted;
         private bool _isCurrentSentenceSkipped;
+        public MonoBehaviour CurrentDialogOwner { get; private set; }
 
         public event Action OnDialogEnded; // Event untuk menandakan dialog selesai
 
@@ -51,6 +52,11 @@ namespace cherrydev
         public void SetCharDelay(float value) => _dialogCharDelay = value;
 
         public void SetNextSentenceKeyCodes(List<KeyCode> keyCodes) => _nextSentenceKeyCodes = keyCodes;
+
+        public void SetCurrentDialogOwner(MonoBehaviour owner)
+        {
+            CurrentDialogOwner = owner;
+        }
 
         public void StartDialog(DialogNodeGraph dialogNodeGraph)
         {
@@ -247,7 +253,12 @@ namespace cherrydev
             _isDialogStarted = false;
 
             _onDialogFinished?.Invoke();
-            OnDialogEnded?.Invoke(); // Memicu event OnDialogEnded
+
+            // Cek apakah owner masih aktif sebelum trigger event
+            if (CurrentDialogOwner != null)
+            {
+                OnDialogEnded?.Invoke();
+            }
         }
     }
 }

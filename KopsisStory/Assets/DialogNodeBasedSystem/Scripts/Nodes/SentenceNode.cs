@@ -1,7 +1,9 @@
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
 namespace cherrydev
+
 {
     [CreateAssetMenu(menuName = "Scriptable Objects/Nodes/Sentence Node", fileName = "New Sentence Node")]
     public class SentenceNode : Node
@@ -27,26 +29,63 @@ namespace cherrydev
         /// Returning external function name
         /// </summary>
         /// <returns></returns>
-        public string GetExternalFunctionName() => _externalFunctionName;
+        public string GetExternalFunctionName()
+        {
+            if (!string.IsNullOrEmpty(_externalFunctionName))
+            {
+                if (_externalFunctionName == "Lanang")
+                {
+                    CharacterData.NAMA = "Gilang";
+                    CharacterData.HO1 = "Bang";
+                    CharacterData.HO2 = "Abang";
+                }
+                else if (_externalFunctionName == "Women")
+                {
+                    CharacterData.NAMA = "Chyntia";
+                    CharacterData.HO1 = "Kak";
+                    CharacterData.HO2 = "Kakak";
+                }
+            }
+            
+            var replacements = new Dictionary<string, string>
+            {
+                {"{nama}", CharacterData.NAMA},
+                {"{ho1}", CharacterData.HO1},
+                {"{ho2}", CharacterData.HO2}
+            };
 
-        /// <summary>
-        /// Returning sentence character name
-        /// </summary>
-        /// <returns></returns>
-        public string GetSentenceCharacterName() => _sentence.CharacterName;
+            string result = _externalFunctionName;
+            foreach (var replacement in replacements)
+            {
+                result = result.Replace(replacement.Key, replacement.Value);
+            }
+            
+            return result;
+        }
 
-        /// <summary>
-        /// Setting sentence text
-        /// </summary>
-        /// <param name="text"></param>
-        /// <returns></returns>
-        public void SetSentenceText(string text) => _sentence.Text = text;
+        public string GetSentenceCharacterName() 
+        {
+            return _sentence.CharacterName
+                .Replace("{nama}", CharacterData.NAMA)
+                .Replace("{ho1}", CharacterData.HO1)
+                .Replace("{ho2}", CharacterData.HO2);
+        }
 
-        /// <summary>
-        /// Returning sentence text
-        /// </summary>
-        /// <returns></returns>
-        public string GetSentenceText() => _sentence.Text;
+        public void SetSentenceText(string text) 
+        {
+            _sentence.Text = text
+                .Replace("{nama}", CharacterData.NAMA)
+                .Replace("{ho1}", CharacterData.HO1)
+                .Replace("{ho2}", CharacterData.HO2);
+        }
+
+        public string GetSentenceText() 
+        {
+            return _sentence.Text
+                .Replace("{nama}", CharacterData.NAMA)
+                .Replace("{ho1}", CharacterData.HO1)
+                .Replace("{ho2}", CharacterData.HO2);
+        }
 
         /// <summary>
         /// Returning sentence character sprite
@@ -83,7 +122,6 @@ namespace cherrydev
             if (GUILayout.Button(_externalButtonLabel))
             {
                 _isExternalFunc = !_isExternalFunc;
-
             }
 
             GUILayout.EndArea();
@@ -100,16 +138,19 @@ namespace cherrydev
             EditorGUILayout.EndHorizontal();
         }
 
-        /// <summary>
-        /// Draw label and text fields for sentence text
-        /// </summary>
-        private void DrawSentenceTextFieldHorizontal()
-        {
-            EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField($"Text ", GUILayout.Width(LabelFieldSpace));
-            _sentence.Text = EditorGUILayout.TextField(_sentence.Text, GUILayout.Width(TextFieldWidth));
-            EditorGUILayout.EndHorizontal();
-        }
+    /// <summary>
+    /// Draw label and text fields for sentence text
+    /// </summary>
+    private void DrawSentenceTextFieldHorizontal()
+    {   
+        EditorGUILayout.BeginHorizontal();
+        EditorGUILayout.LabelField($"Text ", GUILayout.Width(LabelFieldSpace));
+        
+        // Menggunakan TextArea dengan GUILayout.Height yang sesuai
+        _sentence.Text = EditorGUILayout.TextArea(_sentence.Text, GUILayout.Width(TextFieldWidth), GUILayout.Height(35));
+        
+        EditorGUILayout.EndHorizontal();
+    }
 
         /// <summary>
         /// Draw label and text fields for char sprite

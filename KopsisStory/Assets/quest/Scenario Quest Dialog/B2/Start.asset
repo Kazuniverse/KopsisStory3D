@@ -1,0 +1,884 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9185736895668717468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 913
+    y: 529
+    width: 190
+    height: 155
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Nah gitu dong, sekarang kamu ambil sapu yang ada di gudang Kopsis, lalu
+      bersihin Kopsis sampai terlihat seperti baru. Jangan sampai ada satu debu pun!
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 4675738366226036073}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 1
+  _externalFunctionName: next
+--- !u!114 &-9000102486602119541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1101
+    y: 384
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Yap, karena aku sudah menceritakan sesuatu panjang lebar, dan yang lain
+      juga sedang mencari persediaan untuk Kopsis maka tinggal kamu yang harus kuberi
+      pekerjaan!
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -3818541319218802149}
+  ChildNode: {fileID: -7882558621406716235}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-8549618124448473484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 481
+    y: 231
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Sayangnya kurasa itu sudah terlambat. . .
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -122633658542199388}
+  ChildNode: {fileID: 4847230666261509414}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-8120835465932890797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1289
+    y: 232
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: "Sayangnya bahkan setelah mereka dikeluarkan, mereka tak jera sedikitpun
+      dan semakin sering melakukan perundungan pada orang-orang disekitarnya.\r"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -67280859243124591}
+  ChildNode: {fileID: -4274586773297859797}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-7882558621406716235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1299
+    y: 384
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Hah?! Mendadak Sekali!
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -9000102486602119541}
+  ChildNode: {fileID: 2391026801203888048}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-7272092113801278341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 716
+    y: 72
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Namanya Dani, dia udah aku ajak buat gabung tapi katanya masih sibuk. Jadi
+      nolak deh dia.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -3323219939380673979}
+  ChildNode: {fileID: 2947693407331169207}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-5941809105206597863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1103
+    y: 77
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: '. . ., kenapa Ra?
+
+      Kok kamu diem aja?'
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 2947693407331169207}
+  ChildNode: {fileID: -4868443697185385456}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-4868443697185385456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1294
+    y: 78
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Kamu. . . kok bisa ketemu sama Dani. . .?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -5941809105206597863}
+  ChildNode: {fileID: 6168115391951211348}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-4708441390598521395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 337
+    y: 70
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Aduh aku lupa, maaf banget ya Ra. Aku barusan abis ketemu sama adik kelas,
+      katanya dia mantan anggota Kopsis bareng kamu sama yang lain, jadi aku barusan
+      ajakin dia buat gabung lagi. . .
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 6736632987488080914}
+  ChildNode: {fileID: -3323219939380673979}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-4274586773297859797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1094
+    y: 236
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Tindakan mereka itu bukannya mereda tapi malah semakin liar, aku pernah
+      melihat mereka melukai, bahkan hampir membunuh orang lain.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -8120835465932890797}
+  ChildNode: {fileID: 1215602305014844984}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-3818541319218802149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 912
+    y: 383
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: . . .
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -3367272752592841777}
+  ChildNode: {fileID: -9000102486602119541}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-3367272752592841777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 719
+    y: 380
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: "Sayangnya begitulah kenyataannya\r\nSeandainya aku bertindak lebih cepat
+      dan membantu Dani saat itu. . .\r"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 1825117134918403161}
+  ChildNode: {fileID: -3818541319218802149}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-3323219939380673979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 528
+    y: 71
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Adik kelas? Siapa namanya?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -4708441390598521395}
+  ChildNode: {fileID: -7272092113801278341}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-122633658542199388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 687
+    y: 226
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Para berandalan itu mengeluarkan senjata tajam dan mengancam Dani, yang
+      bisa kulakukan saat itu hanyalah memanggil polisi untuk membantu Dani. . .
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 1215602305014844984}
+  ChildNode: {fileID: -8549618124448473484}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &-67280859243124591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1499
+    y: 242
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: "Namun. . ., karena hal itu lah para pembuat onar itu mulai sering merundung
+      Dani.\r\nAku tidak tahan dengan perlakuan mereka, karena itulah aku melaporkannya
+      pada Pak Kepala Sekolah. . . \r"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 2235545250078586078}
+  ChildNode: {fileID: -8120835465932890797}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  NodesList:
+  - {fileID: 6736632987488080914}
+  - {fileID: -4708441390598521395}
+  - {fileID: -3323219939380673979}
+  - {fileID: -7272092113801278341}
+  - {fileID: 2947693407331169207}
+  - {fileID: -5941809105206597863}
+  - {fileID: -4868443697185385456}
+  - {fileID: 6168115391951211348}
+  - {fileID: 5758570558473323958}
+  - {fileID: -67280859243124591}
+  - {fileID: -8120835465932890797}
+  - {fileID: 1215602305014844984}
+  - {fileID: -122633658542199388}
+  - {fileID: 4847230666261509414}
+  - {fileID: 1608272585670191}
+  - {fileID: 7572509525442270282}
+  - {fileID: 1825117134918403161}
+  - {fileID: -3367272752592841777}
+  - {fileID: -3818541319218802149}
+  - {fileID: -9000102486602119541}
+  - {fileID: -7882558621406716235}
+  - {fileID: 2391026801203888048}
+  - {fileID: 4675738366226036073}
+  - {fileID: -9185736895668717468}
+  - {fileID: 2235545250078586078}
+  - {fileID: -4274586773297859797}
+  - {fileID: -8549618124448473484}
+  NodeToDrawLineFrom: {fileID: 0}
+  LinePosition: {x: 0, y: 0}
+--- !u!114 &1608272585670191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 145
+    y: 369
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: "Iya, seperti yang kau duga.\r\nDia tewas saat polisi hampir sampai disana.
+      . .\r"
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 4847230666261509414}
+  ChildNode: {fileID: 7572509525442270282}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &1215602305014844984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 893
+    y: 232
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Aku tidak dapat melakukan apapun saat itu, tapi Dani berbeda. . . Dia langsung
+      menghampiri mereka dan memintaku untuk memanggil polisi, aku sangat yakin bahwa
+      dia juga takut saat itu.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -4274586773297859797}
+  ChildNode: {fileID: -122633658542199388}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &1825117134918403161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 528
+    y: 376
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: 'Hanya 6 bulan?!
+
+      Apa mereka sudah gila, ini jelas-jelas sebuah pelanggaran
+      yang berat!'
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 7572509525442270282}
+  ChildNode: {fileID: -3367272752592841777}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &2235545250078586078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1705
+    y: 243
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Tapi, semenjak Kopsis dihuni oleh para pembuat onar itu, cuman Dani yang
+      selalu berusaha buat mengusir mereka setiap hari.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 5758570558473323958}
+  ChildNode: {fileID: -67280859243124591}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &2391026801203888048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1300
+    y: 521
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: 'Jadi begitu, kurasa aku harus kehilangan satu anggota berharga ku lagi.
+
+      SAYANG
+      SEKALI . . .'
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -7882558621406716235}
+  ChildNode: {fileID: 4675738366226036073}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &2947693407331169207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 908
+    y: 75
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: . . .
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -7272092113801278341}
+  ChildNode: {fileID: -5941809105206597863}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &4675738366226036073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1103
+    y: 528
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: . . ., jadi aku harus ngapain?
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 2391026801203888048}
+  ChildNode: {fileID: -9185736895668717468}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &4847230666261509414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 140
+    y: 225
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Maksudmu, Dani. . .
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -8549618124448473484}
+  ChildNode: {fileID: 1608272585670191}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &5758570558473323958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1699
+    y: 89
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: . . ., jadi gini {nama}. Sebelumnya emang bener ada yang namanya Dani disini,
+      dan dia juga salah satu anggota Kopsis.
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 6168115391951211348}
+  ChildNode: {fileID: 2235545250078586078}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &6168115391951211348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 1500
+    y: 87
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: You
+    Text: Aku ketemu dia sejak sampai di sekolah, dia yang nyaranin aku buat pergi
+      ke Kopsis ini
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: -4868443697185385456}
+  ChildNode: {fileID: 5758570558473323958}
+  _isExternalFunc: 0
+  _externalFunctionName: 
+--- !u!114 &6736632987488080914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 138
+    y: 70
+    width: 190
+    height: 155
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: 'Kamu habis dari mana sih {nama}!
+
+      Kok lama banget, yang lain udah
+      pada pergi buat nyiapin semua yang dibutuhin Kopsis loh. . .'
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 0}
+  ChildNode: {fileID: -4708441390598521395}
+  _isExternalFunc: 1
+  _externalFunctionName: after
+--- !u!114 &7572509525442270282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 333
+    y: 372
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Rara
+    Text: Para berandalan itu juga ditahan selama 6 bulan karena masih dibawah umur,
+      entah mereka akan jera atau tidak setelah ini. . .
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 1608272585670191}
+  ChildNode: {fileID: 1825117134918403161}
+  _isExternalFunc: 0
+  _externalFunctionName: 
